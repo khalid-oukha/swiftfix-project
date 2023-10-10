@@ -157,13 +157,13 @@ h4{
 }
 .Why_Boxes{
    display: flex;
-   padding: 5rem;
+   padding: 8rem;
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
 }
 .discription{
-   font-size: 14px;
+   font-size: 1.5rem;
    color: #D9D9D9;
 }
 /* ------------------------------------------count section style------------------------------------------*/
@@ -202,9 +202,30 @@ h4{
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
-   padding: 50px; /* Add some padding for space */  
+   padding-top: 50px;
+   padding-bottom: 50px;
+   background-color: #F2F7FF;
 }
 .client-content{
    display: flex;
-   justify-content:space-between;
+   margin-top: 25px;
+}
+.feedbackbox{   
+   margin: 25px;
+   padding: 40px;
+   /* box shadow style */
+   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06); 
+}
+.feedback{
+   flex: 1;
+   width: 50%;
+   color: #fff;
+   text-align: center;
+}
+.client-pic-name{
+   display: flex;
+   justify-content: center;
+}
+.client-name{
+   padding-left: 20px;
 }
