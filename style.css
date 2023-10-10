@@ -38,8 +38,7 @@ h4{
    color: #094B72;
 }
 .PrimaryBtn{
-   padding: 12px;
-   border-radius: 8px;
+   border-radius: 10px;
    color: white;
    background-color: #094B72;
    font-size: 1.6rem;
@@ -102,6 +101,7 @@ h4{
    border-radius: 8px;
    z-index: 1;
    padding: 1rem 8rem;
+   text-align: center;
    background-color: white;
 }
 .Herocompanys{
@@ -228,4 +228,12 @@ h4{
 }
 .client-name{
    padding-left: 20px;
+}
+.complex{
+   width: 68vw;
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
 }
