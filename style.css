@@ -12,11 +12,22 @@
    font-size: 10px;
 
 }
+/*---layout style---*/
 .container{
    padding-left: 10%;
    padding-right: 10%;
 }
-
+/*--- button  style---*/
+.PrimaryBtn{
+   border-radius: 10px;
+   color: white;
+   background-color: #094B72;
+   font-size: 1.6rem;
+   padding: 25px 50px;
+   text-align: center;
+   justify-content: center;
+}
+/*---texts  style---*/
 .section_title{
    font-family: 'Playfair Display', serif;
    font-size: 4.8rem;
@@ -37,15 +48,17 @@ h4{
    padding-bottom: 1rem;
    color: #094B72;
 }
-.PrimaryBtn{
-   border-radius: 10px;
-   color: white;
-   background-color: #094B72;
-   font-size: 1.6rem;
-   padding: 25px 50px;
-   text-align: center;
-   justify-content: center;
+
+.thiredText{
+   font-size: 2.2rem;
+   color: #D9D9D9;
 }
+
+.discription{
+   font-size: 1.5rem;
+   color: #D9D9D9;
+}
+
 /* ------------------------------------------hero first section style------------------------------------------*/
 .heroInfo h1{
    font-family: 'Playfair Display', serif;
@@ -107,10 +120,6 @@ h4{
 .Herocompanys{
    margin-top: 20%;
 }
-.thiredText{
-   font-size: 2.2rem;
-   color: #D9D9D9;
-}
 
 
 .heroInfo{
@@ -162,10 +171,7 @@ h4{
    justify-content: space-between;
    align-items: center;
 }
-.discription{
-   font-size: 1.5rem;
-   color: #D9D9D9;
-}
+
 /* ------------------------------------------count section style------------------------------------------*/
 .count{
    display: flex;
@@ -196,7 +202,7 @@ h4{
    border-right: .2rem solid #fefefe;
    border-left: .2rem solid #fefefe;
 }
-/* ------------------------------------------count section style------------------------------------------*/
+/* ------------------------------------------client Reviews section style------------------------------------------*/
 .client{
    display: flex;
    flex-direction: column;
@@ -229,6 +235,7 @@ h4{
 .client-name{
    padding-left: 20px;
 }
+/* ------------------------------------------complex section style------------------------------------------*/
 .complex{
    width: 68vw;
    height: 50vh;
@@ -237,6 +244,8 @@ h4{
    justify-content: space-around;
    align-items: flex-start;
 }
+
+/* ------------------------------------------swiftfix informations section style------------------------------------------*/
 .swiftfix-infos{
    display: flex;
    justify-content: space-between;
@@ -266,9 +275,11 @@ h4{
 }
 
 .Myfooter{
-   background-color: #094B72;
+   background-color: #004D7B;
+   height: 10vh;
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .social-media img{
    padding-left: 10px;
@@ -279,4 +290,37 @@ h4{
    color: #D9D9D9;
    font-size: 1.4rem;
    font-weight: lighter;
+}
+
+.services{
+   background-color: #F2F7FF;
+   padding: 40px;
+}
+.services-title{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.services-content{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 15vh;
+}
+.service-box{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 25px;
+   margin-bottom: 50px;
+   color: #fff;
+   text-align: center;
+   width: 25vw;
+   height: 70vh;
+   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+   align-items: center;
+}
+.icon-services{
+width: 146px;
+height: 146px;
 }
