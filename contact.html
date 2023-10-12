@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SwiftFix</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="Myheader">
-        <a href="index.html">
-            <img src="images/Logo.png" alt="" class="logo" />
-        </a>
-        <div class="head-right">
-          <nav class="mynav">
-            <ul>
-              <li><a class="element-nav" href="contact.html">Contact</a></li>
-              <li><a class="element-nav" href="service.html">TestMONIALS</a></li>
-              <li><a class="element-nav" href="about.html">about</a></li>
-              <li><a class="element-nav" href="service.html">SERVICES</a></li>
-            </ul>
-          </nav>
-          <img src="images/GroupSearch.png" alt="" class="searchIcon" />
-        </div>
-      </header>
+      <a href="index.html">
+        <img src="images/Logo.png" alt="" class="logo" />
+      </a>
+      <div class="head-right">
+        <nav class="mynav">
+          <ul>
+            <li><a class="element-nav" href="contact.html">Contact</a></li>
+            <li><a class="element-nav" href="service.html">TestMONIALS</a></li>
+            <li><a class="element-nav" href="about.html">about</a></li>
+            <li><a class="element-nav" href="service.html">SERVICES</a></li>
+          </ul>
+        </nav>
+        <img src="images/GroupSearch.png" alt="" class="searchIcon" />
+      </div>
+    </header>
 
-      <section class="swiftfix-infos container">
-        <div class="logo">
-          <img src="images/Logowhite.png" alt="" />
+    <section class="contact container">
+      <div class="services-title">
+        <h1 class="section_title t_black">Contact Us</h1>
+        <p class="thiredText">
+          We are here to assist businesses and projects in Morocco with
+          consulting for repair and maintenance.
+        </p>
+      </div>
+      <div class="contact-container">
+          <form action="/form.php" class="form">
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
+              <input type="text" placeholder="Phone Number" required />
+              <input type="email" placeholder="Email" required />
+              <select class="select-box">
+                <option value="" selected disabled>select an option</option>
+                <option value="first">
+                  you want to ask us about our services
+                </option>
+                <option value="first">General Inquiry</option>
+                <option value="second">House Cleaning</option>
+                <option value="third">Repairs & Maintenance</option>
+                <option value="fourth">Painting Services</option>
+              </select>
+              <textarea name="" id="" cols="30" rows="5"></textarea>
+              <button class="PrimaryBtn">SEND</button>
+          </form>
+        <div class="map-container">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13498.899852906557!2d-8.517190949999998!3d32.2385713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1697120113732!5m2!1sen!2sma"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-  
-        <div class="list-infos">
-          <div class="list">
-            <h4>product</h4>
-              <ul>
+      </div>
+    </section>
+
+    <section class="swiftfix-infos container">
+      <div class="logo">
+        <img src="images/Logowhite.png" alt="" />
+      </div>
+
+      <div class="list-infos">
+        <div class="list">
+          <h4>product</h4>
+          <ul>
             <li class="list-element"><a href="">Overview</a></li>
             <li class="list-element"><a href="">Features</a></li>
             <li class="list-element"><a href="">Tutorials</a></li>
             <li class="list-element"><a href="">Pricing</a></li>
             <li class="list-element"><a href="">Releases</a></li>
-             </ul>
-          </div>
-          <div class="list">
-            <h4>company</h4>
-              <ul>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>company</h4>
+          <ul>
             <li class="list-element"><a href="">About</a></li>
             <li class="list-element"><a href="">Services</a></li>
             <li class="list-element"><a href="">Careers</a></li>
             <li class="list-element"><a href="">Contact</a></li>
             <li class="list-element"><a href="">Partners</a></li>
-             </ul>
-          </div>
-          <div class="list">
-            <h4>support</h4>
-              <ul>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>support</h4>
+          <ul>
             <li class="list-element"><a href="">Help Center</a></li>
             <li class="list-element"><a href="">Terms of service</a></li>
             <li class="list-element"><a href="">Legal</a></li>
             <li class="list-element"><a href="">Privacy Policy</a></li>
             <li class="list-element"><a href="">Status</a></li>
-             </ul>
-          </div>
-          
-          
+          </ul>
         </div>
-      </section>
-    
-      <footer class="Myfooter container">
-        <h5>© 2023 SwiftFix. All rights reserved</h5>
-        <div class="social-media">
-  
-            <img src="images/Social Icons.png" alt="">
-            <img src="images/Social Icons.png" alt="">
-            <img src="images/twit.png" alt="">
-            <img src="images/Social Icons.png" alt="">
-        </div>
-      </footer>
-</body>
+      </div>
+    </section>
+
+    <footer class="Myfooter container">
+      <h5>© 2023 SwiftFix. All rights reserved</h5>
+      <div class="social-media">
+        <img src="images/Social Icons.png" alt="" />
+        <img src="images/Social Icons.png" alt="" />
+        <img src="images/twit.png" alt="" />
+        <img src="images/Social Icons.png" alt="" />
+      </div>
+    </footer>
+  </body>
 </html>
