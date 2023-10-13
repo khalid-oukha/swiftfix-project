@@ -39,14 +39,27 @@
 }
 /*--- button  style---*/
 .primary-btn{
+   position: relative;
    border-radius: 10px;
    color: white;
-   background-color: #094B72;
+   background-color: #004D7B;
    font-size: 1.6rem;
    padding: 25px 50px;
    text-align: center;
-   justify-content: center;
+   cursor: pointer;
+   transition: 0.8s;
 }
+.primary-btn:hover{
+
+   color: white ;
+   background-color: #007800;
+   font-size: 1.9rem;
+   padding: 24px 49px;
+   text-align: center;
+   justify-content: center;
+
+}
+
 /*---texts  style---*/
 .section_title{
    font-family: 'Playfair Display', serif;
@@ -78,7 +91,7 @@ h4{
 
 .description{
    font-size: 1.5rem;
-   color: #D9D9D9;
+   color: rgb(20, 19, 19);
 }
 
 /* ------------------------------------------hero first section style------------------------------------------*/
@@ -424,21 +437,21 @@ height: 146px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   width: 47%;
+   width: 45%;
 }
 
 .form input,
 select{
-  border: none;
-  height: 60px;
-  margin-bottom: 25px;
-  font-size: 2rem;
-  padding-left: 25px;
-  background-color: #ffffff;
-  outline: none;
-  color: #282626;
-  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+   border: none;
+   height: 60px;
+   margin-bottom: 25px;
+   font-size: 2rem;
+   padding-left: 25px;
+   background-color: #ffffff;
+   outline: none;
+   color: #282626;
+   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
 textarea{
    border: none;
