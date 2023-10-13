@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-
+/* animation */
+@keyframes slide-animate{
+   50%{
+      top: 60%;
+      left: 30%;
+      
+   }
+   100%{
+      top: 50%;
+      left: 20%;
+   }  
+}
+@keyframes fade-in-out{
+   0%{
+      opacity: 1;
+      
+   }
+   50%{
+      opacity: 0;
+   }  
+}
 /* ------------------------------------------general style------------------------------------------*/
 *{
    padding: 0;
@@ -10,15 +30,15 @@
    list-style: none;
    font-family: 'Poppins', serif;
    font-size: 10px;
-
 }
+
 /*---layout style---*/
 .container{
    padding-left: 10%;
    padding-right: 10%;
 }
 /*--- button  style---*/
-.PrimaryBtn{
+.primary-btn{
    border-radius: 10px;
    color: white;
    background-color: #094B72;
@@ -31,6 +51,7 @@
 .section_title{
    font-family: 'Playfair Display', serif;
    font-size: 4.8rem;
+   margin-bottom: 1rem;
 }
 
 .t_black{
@@ -42,32 +63,32 @@
 h4{
    color: #363940;
    font-size: 2.2rem;
+   margin-bottom: 1rem;
 }
-.primaryText{
+.primary-p{
    font-size: 2.4rem;
    padding-bottom: 1rem;
    color: #094B72;
 }
 
-.thiredText{
+.p-color-grey{
    font-size: 2.2rem;
    color: #D9D9D9;
 }
 
-.discription{
+.description{
    font-size: 1.5rem;
    color: #D9D9D9;
 }
 
 /* ------------------------------------------hero first section style------------------------------------------*/
-.heroInfo h1{
+.hero-titles-font h1{
    font-family: 'Playfair Display', serif;
    font-size: 9rem;
    color: #094B72;
-   padding-bottom: 1rem;
 }
 
-.Myheader{
+.head-style{
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -82,14 +103,13 @@ h4{
    align-items: center;
    width: 60%;
 }
-.mynav ul li {
+.list-item{
    display: inline-block;
    padding: 10px 30px;
    
 }
-.element-nav{
-   font-family: 'Playfair Display', serif;
-   font-size: 1.4rem;
+.link-item{
+   font-size: 1.5rem;
 }
 
 .logo{
@@ -103,36 +123,68 @@ h4{
    padding-left: 10%;
 }
 
-.heroImg{
-   position: inherit;
+.hero-right-image{
    display: flex;
    flex-direction: column;
-   justify-content: flex-start;
    align-items: center;
+   width: 60%;
 }
-.HeroName{
-   border-radius: 8px;
+.hero-img-animation{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+.hero-img-animation img{
+   position: relative;
+   z-index: 2;
+   
+}
+#hero-circle-back{
+   position: absolute;
+   top: 50%;
+   left: 20%;
+   transform: translate(50%,-50%);
+   animation: slide-animate 5s  infinite;
+}
+#about-hero-circle-hover{
+   position: absolute;
+   top: 50%;
+   left: 20%;
+   transform: translate(50%,-50%);
+   animation: slide-animate 5s  infinite;
+}
+#hero-circle-front{
+   position: absolute;
    z-index: 1;
-   padding: 1rem 8rem;
+}
+
+.hero-name-font{
+   border-radius: 8px;
+   z-index: 4;
+   padding: 4rem 8rem;
+   width: 60%;
    text-align: center;
    background-color: white;
+   /* box shadow style */
+   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06); 
 }
-.Herocompanys{
+.hero-p-companies{
    margin-top: 20%;
 }
 
 
-.heroInfo{
+.hero-titles-font{
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   width: 100%;
+   width: 40%;
    justify-content: space-between;
 }
-.Herocompanys p {
+.hero-p-companies p {
    padding-bottom: 2rem;
 }
-.companylogo img{
+.hero-companies-logo img{
    padding-right: 3rem;
 }
 
@@ -140,49 +192,57 @@ h4{
 .why{
    background-color: #F2F7FF;
    position: relative;
-   bottom: 2rem;
+   padding-top: 5%;
+   padding-bottom: 5%;
    display: flex;
    justify-content: space-between;
    background-color: #F2F7FF;
    align-items: center;
 }
-.rightWhy{
+.Why-right-layout{
    flex-basis: 40%;
-   padding-right:100px ;
+   padding-right:70px ;
+   width: 40%;
 }
-.leftWhy{
-   flex-basis: 60%;
+.why-boxes-layout{
+   padding-left:10% ;
+   align-items: center;
+   width: 60%;
 }
 
 .box {
-   flex: 1;
-   width: 50%;
-   margin: 25px;
-   padding: 40px;
+   width: 45%;
+   padding: 30px;
    color: #fff;
    text-align: start;
+
    /* box shadow style */
    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06); 
 }
 .Why_Boxes{
    display: flex;
-   padding: 8rem;
    flex-wrap: wrap;
-   justify-content: space-between;
    align-items: center;
+   gap: 2rem;
 }
 
 /* ------------------------------------------count section style------------------------------------------*/
-.count{
+.section-count{
+   position: relative;
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    padding: 50px; /* Add some padding for space */
    background-image: url(images/Patterns.svg);
-   background-color: #094B72;
-   
+   background-color: #094B72;  
 }
-
+.section-count svg{
+   animation: fade-in-out 5s  2s ease-in  infinite;
+   position: absolute;
+   width: 100%;
+   opacity: 1;
+}
 .count_details {
    display: flex;
    justify-content: space-between;
@@ -190,20 +250,23 @@ h4{
    padding: 2rem;
    width: 50%;
    text-align: center;
+   z-index: 1;
 }
 
 .count_title{
    font-size: 4.8rem;
    font-weight: bold;
+   z-index: 1;
 }
 .count_buissnes{
    padding-left: 10%;
    padding-right: 10%;
    border-right: .2rem solid #fefefe;
    border-left: .2rem solid #fefefe;
+   z-index: 1;
 }
 /* ------------------------------------------client Reviews section style------------------------------------------*/
-.client{
+.section-client {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -236,7 +299,7 @@ h4{
    padding-left: 20px;
 }
 /* ------------------------------------------complex section style------------------------------------------*/
-.complex{
+.section-complex{
    width: 68vw;
    height: 50vh;
    display: flex;
@@ -246,15 +309,15 @@ h4{
 }
 
 /* ------------------------------------------swiftfix informations section style------------------------------------------*/
+
 .swiftfix-infos{
    display: flex;
    justify-content: space-between;
-   background-color: #094B72;
    margin-top: 50px;
    padding-top: 50px;
    height: 50vh;
+   background-color: #094B72;
 }
-
 .list-infos {
    display: flex;
    justify-content: space-between;
@@ -274,7 +337,7 @@ h4{
    padding-top: 15px;
 }
 
-.Myfooter{
+.footer-license{
    background-color: #004D7B;
    height: 10vh;
    display: flex;
@@ -286,7 +349,7 @@ h4{
    padding-right: 10px;
 }
 
-.Myfooter h5{
+.footer-license h5{
    color: #D9D9D9;
    font-size: 1.4rem;
    font-weight: lighter;
@@ -310,13 +373,12 @@ h4{
 .service-box{
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: space-around;
    padding: 25px;
-   margin-bottom: 50px;
    color: #fff;
    text-align: center;
    width: 25vw;
-   height: 50vh;
+   height: 70vh;
    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
    align-items: center;
 }
@@ -332,22 +394,28 @@ height: 146px;
    flex-wrap: wrap;
 }
 .order-box{
-   width: 20%;
-   margin: 25px;
-   padding: 40px;
-   color: #fff;
+   width: 25%;
+   height: 40vh;
+   padding: 50px;
    text-align: start;
+   transition: 0.8s;
    /* box shadow style */
    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06); 
 }
-.order-img{
-   width: 20%;
-   margin: 25px;
-   padding: 5px;
-   /* box shadow style */
-   box-shadow: 0px 18px 58px 16px rgba(41, 176, 217, 0.06); 
+.order-box:hover h4,.order-box:hover, .order-box:hover p{
+   color: white;
 }
-
+.order-box:hover{
+   background-color: #094B72;
+}
+.order-img{
+   width: 25%;
+   height: 40vh;
+}
+.order-services{
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
 .image-service{
    width: 100%;
    height: 100%;
