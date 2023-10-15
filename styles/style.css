@@ -405,7 +405,7 @@ h4{
    align-items: center;
 }
 .service-box:hover{
-   background-color: #08c05b;
+   background-color: #3284b0;
 }
 .service-box:hover h4,.service-box:hover, .service-box:hover p{
    color: white;
