@@ -1,0 +1,84 @@
+@media (max-width: 767px){
+
+}
+@media (max-width: 768px) {
+    *{
+        font-size: 5px ;
+     }
+
+    .container {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    /* ----------------head and hero section-------------- */
+    .head-right {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    .logo svg{
+      width: 90px; 
+      height: auto;
+    }
+    
+    .hero-right-image {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+      }
+      .hero-titles-font{
+            width: 100%;
+     }
+     .hero-companies-logo img{
+        width: 30%;
+     }
+      /* ----------------why section-------------- */
+      .why{
+        display: block;
+      }
+      .Why-right-layout{
+        text-align: center;
+        margin-bottom: 5%;
+     }
+     .why-boxes-layout{
+        width: 100%;
+     }
+     .box svg{
+            width: 20px;
+     }
+      /* ----------------count section and feedback-------------- */
+     .count_details{
+        width: 100%;
+     }
+     .client-content{
+        display: block;
+     }
+     .feedback,.form{
+        width: 100%;
+     }
+     .section-complex{
+        height: 25vh;
+        width: 100%;
+     }
+
+     .swiftfix-infos{
+        display: block;
+     }
+     .list-infos{
+        margin-top: 5%;
+        width: 100%;
+     }
+     .form-contact-container{
+        display: block;
+     }
+     .form{
+        width: 100%;
+     }
+     .map-container iframe{
+        width: 100%;
+        margin-top: 10%;
+        height: 60vh;
+     }
+  }

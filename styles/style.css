@@ -4,13 +4,13 @@
 /* animation */
 @keyframes slide-animate{
    50%{
-      top: 60%;
-      left: 30%;
+      top: 40%;
+      right: 65%;
       
    }
    100%{
       top: 50%;
-      left: 20%;
+      right: 50%;
    }  
 }
 
@@ -33,7 +33,9 @@
    font-family: 'Poppins', serif;
    font-size: 10px;
 }
-
+body{
+   overflow-x: hidden;
+}
 /*---layout style---*/
 .container{
    padding-left: 10%;
@@ -46,20 +48,16 @@
    color: white;
    background-color: #004D7B;
    font-size: 1.6rem;
-   padding: 25px 50px;
+   padding: 2.5rem 5rem;
    text-align: center;
    cursor: pointer;
    transition: 0.8s;
 }
 .primary-btn:hover{
-
    color: white ;
    background-color: #0b8942;
    font-size: 1.8rem;
-   padding: 24px 49px;
-   text-align: center;
-   justify-content: center;
-
+   padding: 2.6rem 5.2rem;
 }
 
 /*---texts  style---*/
@@ -100,21 +98,14 @@ h4{
 
 
 /* ------------------------------------------hero first section style------------------------------------------*/
-.hero-titles-font h1{
-   font-family: 'Playfair Display', serif;
-   font-size: 9rem;
-   color: #094B72;
-}
-.hero-name-font span{
-   font-size: 1.7rem;
-}
+
 .head-style{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 100px;
-   padding-left: 10%;
-   padding-right: 10%;
+   margin-top: 2%;
+   margin-left: 10%;
+   margin-right: 10%;
 }
 
 .head-right{
@@ -132,17 +123,27 @@ h4{
    font-size: 1.5rem;
 }
 
-.logo{
-   width: 144px;
-   height: 36px;
-}
 .hero{
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding-left: 10%;
 }
-
+.hero-titles-font h1{
+   font-family: 'Playfair Display', serif;
+   font-size: 9rem;
+   color: #094B72;
+}
+.hero-name-font span{
+   font-size: 1.7rem;
+}
+.hero-titles-font{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 45%;
+   justify-content: space-between;
+}
 .hero-right-image{
    display: flex;
    flex-direction: column;
@@ -150,27 +151,28 @@ h4{
    width: 60%;
 }
 .hero-img-animation{
+   position: relative;
    display: flex;
    flex-direction: column;
    align-items: center;
    width: 100%;
 }
 .hero-img-animation img{
-   position: relative;
+
    z-index: 2;
    
 }
 #hero-circle-back{
    position: absolute;
    top: 50%;
-   left: 20%;
+   right: 50%;
    transform: translate(50%,-50%);
    animation: slide-animate 5s  infinite;
 }
 #about-hero-circle-hover{
    position: absolute;
    top: 50%;
-   left: 20%;
+   right: 50%;
    transform: translate(50%,-50%);
    animation: slide-animate 5s  infinite;
 }
@@ -183,23 +185,14 @@ h4{
    border-radius: 8px;
    z-index: 4;
    padding: 4rem 8rem;
-   width: 60%;
+   width: 70%;
    text-align: center;
    background-color: white;
    /* box shadow style */
    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06); 
 }
 .hero-p-companies{
-   margin-top: 20%;
-}
-
-
-.hero-titles-font{
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   width: 40%;
-   justify-content: space-between;
+   margin-top: 12%;
 }
 .hero-p-companies p {
    padding-bottom: 2rem;
@@ -221,21 +214,17 @@ h4{
 }
 .Why-right-layout{
    flex-basis: 40%;
-   padding-right:70px ;
-   width: 40%;
 }
 .why-boxes-layout{
-   padding-left:10% ;
    align-items: center;
-   width: 60%;
+   width: 50%;
 }
 
 .box {
-   width: 45%;
-   padding: 30px;
+   width: 40%;
+   padding: 5%;
    color: #fff;
    text-align: start;
-
    /* box shadow style */
    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06); 
 }
@@ -243,6 +232,7 @@ h4{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
+   justify-content: center;
    gap: 2rem;
 }
 
@@ -314,6 +304,7 @@ h4{
 .client-pic-name{
    display: flex;
    justify-content: center;
+   align-items: center;
 }
 .client-name{
    padding-left: 20px;
@@ -463,28 +454,26 @@ height: 146px;
 .form input,
 select{
    border: none;
-   height: 60px;
-   margin-bottom: 25px;
+   height: 6rem;
+   margin-bottom: 2.5rem;
    font-size: 2rem;
-   padding-left: 25px;
+   padding-left: 2.5rem;
    background-color: #ffffff;
    outline: none;
    color: #282626;
-   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
 textarea{
    border: none;
-   margin-bottom: 25px;
+   margin-bottom: 2.5rem;
    font-size: 2rem;
-   padding-left: 25px;
+   padding-left: 2.5rem;
    background-color: #ffffff;
    outline: none;
    color: #282626;
-   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
-.contact-container{
+.form-contact-container{
    width: 100%;
    display: flex;
    justify-content: space-between;

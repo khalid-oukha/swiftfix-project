@@ -17,10 +17,11 @@
     <!-- style links -->
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
     <header class="head-style">
-      <a href="index.html">
+      <a class="logo" href="index.html" aria-label="home page">
         <svg
           width="144"
           height="36"
@@ -44,16 +45,27 @@
         <nav class="navbar">
           <ul>
             <li class="list-item">
-              <a class="link-item" href="contact.html">Contact</a>
+              <a class="link-item" href="contact.html" aria-label="contact page"
+                >Contact</a
+              >
             </li>
             <li class="list-item">
-              <a class="link-item" href="service.html">TestMONIALS</a>
+              <a class="link-item" href="service.html" aria-label="test page"
+                >TestMONIALS</a
+              >
             </li>
             <li class="list-item">
-              <a class="link-item" href="about.html">about</a>
+              <a class="link-item" href="about.html" aria-label="about page"
+                >about</a
+              >
             </li>
             <li class="list-item">
-              <a class="link-item" href="service.html">SERVICES</a>
+              <a
+                class="link-item"
+                href="service.html"
+                aria-label="services page"
+                >SERVICES</a
+              >
             </li>
           </ul>
         </nav>
@@ -83,7 +95,7 @@
           consulting for repair and maintenance.
         </p>
       </div>
-      <div class="contact-container">
+      <div class="form-contact-container">
         <form action="/form.php" method="get" class="form">
           <input type="text" placeholder="First Name" required />
           <input type="text" placeholder="Last Name" required />
@@ -106,7 +118,7 @@
           <button class="primary-btn">SEND</button>
         </form>
         <div class="map-container">
-          <div class="map">
+
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13498.899852906557!2d-8.517190949999998!3d32.2385713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1697120113732!5m2!1sen!2sma"
               width="600"
@@ -116,7 +128,7 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+
         </div>
       </div>
     </section>
