@@ -6,11 +6,11 @@
    50%{
       top: 40%;
       right: 65%;
-      
    }
    100%{
       top: 50%;
       right: 50%;
+
    }  
 }
 
@@ -96,16 +96,13 @@ h4{
    color: #989595;
 }
 
-
 /* ------------------------------------------hero first section style------------------------------------------*/
 
 .head-style{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-top: 2%;
-   margin-left: 10%;
-   margin-right: 10%;
+   margin: 2% 10%;
 }
 
 .head-right{
@@ -113,6 +110,17 @@ h4{
    justify-content: space-between;
    align-items: center;
    width: 60%;
+
+}
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   
+}
+.search-form label{
+   font-size: 2rem;
 }
 .list-item{
    display: inline-block;
@@ -122,6 +130,11 @@ h4{
 .link-item{
    font-size: 1.5rem;
 }
+.icon-style {
+   font-size: 2rem;
+   margin-right: 2%;
+   cursor: pointer;
+ }
 
 .hero{
    display: flex;
@@ -158,8 +171,7 @@ h4{
    width: 100%;
 }
 .hero-img-animation img{
-
-   z-index: 2;
+    z-index: 2;
    
 }
 #hero-circle-back{
@@ -168,17 +180,12 @@ h4{
    right: 50%;
    transform: translate(50%,-50%);
    animation: slide-animate 5s  infinite;
+   z-index: 1;
 }
-#about-hero-circle-hover{
-   position: absolute;
-   top: 50%;
-   right: 50%;
-   transform: translate(50%,-50%);
-   animation: slide-animate 5s  infinite;
-}
+
 #hero-circle-front{
    position: absolute;
-   z-index: 1;
+   
 }
 
 .hero-name-font{
@@ -324,7 +331,6 @@ h4{
 .swiftfix-infos{
    display: flex;
    justify-content: space-between;
-   margin-top: 50px;
    padding-top: 50px;
    height: 50vh;
    background-color: #094B72;
@@ -370,40 +376,44 @@ h4{
 
 .services{
    background-color: #F2F7FF;
-   padding: 40px;
+   padding: 5%;
 }
 .services-title{
    display: flex;
    flex-direction: column;
    align-items: center;
+   text-align: center;
 
 }
 .services-content{
    display: flex;
    justify-content: space-around;
-   margin-top: 15vh;
+   margin-top: 5%;
 }
 .service-box{
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
-   padding: 25px;
-   color: #fff;
-   text-align: center;
-   width: 25vw;
-   height: 70vh;
-   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
    align-items: center;
+   text-align: center;
+   padding: 3%;
+   color: white;
+   background-color: white;
+   width: 25%;
+   box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+   
+}
+.service-box svg{
+   width: 15rem;
+   height: 15rem;
+  }
+.service-box svg ,.service-box p ,.service-box a{
+   margin-bottom: 3%;
 }
 .service-box:hover{
    background-color: #3284b0;
 }
-.service-box:hover h4,.service-box:hover, .service-box:hover p{
+.service-box:hover h4, .service-box:hover p{
    color: white;
-}
-.icon-services{
-width: 146px;
-height: 146px;
 }
 
 .first-row{
@@ -413,31 +423,38 @@ height: 146px;
    flex-wrap: wrap;
 }
 .order-box{
-   width: 25%;
-   height: 40vh;
-   padding: 50px;
-   text-align: start;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   width: 100%;
+   height: 100%;
+   padding: 3%;
+   text-align: center;
    transition: 0.8s;
-   /* box shadow style */
    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06); 
+   color: white;
+   background-color: #004D7B;
+   opacity: 0;
+}
+.order-box:hover{
+   opacity: .9;
 }
 .order-box:hover h4,.order-box:hover, .order-box:hover p{
    color: white;
 }
-.order-box:hover{
-   background-color: #094B72;
-}
-.order-img{
+.order-service-hover{
+   position: relative;
+   text-align: center;
    width: 25%;
-   height: 40vh;
+   height: auto;
 }
 .order-services{
    margin-top: 5%;
    margin-bottom: 5%;
 }
 
-
-.image-service{
+.image-service {
    width: 100%;
    height: 100%;
 }
@@ -449,12 +466,15 @@ height: 146px;
    justify-content: space-between;
    width: 45%;
 }
-
+.form button{
+   width: 50%;
+}
 
 .form input,
 select{
    border: none;
    height: 6rem;
+   width: 100%;
    margin-bottom: 2.5rem;
    font-size: 2rem;
    padding-left: 2.5rem;
@@ -465,6 +485,7 @@ select{
 }
 textarea{
    border: none;
+   width: 100%;
    margin-bottom: 2.5rem;
    font-size: 2rem;
    padding-left: 2.5rem;
@@ -478,10 +499,81 @@ textarea{
    display: flex;
    justify-content: space-between;
    margin-top:5rem;
-   margin-bottom: 5rem;
+   padding-bottom: 5rem;
+}
+.map-container{
+   width: 50%;
+}
+.map-container iframe{
+   width: 100%;
 }
 
+.contact{
+   background-color: #F2F7FF;
+  }
 .select-box option{
    color: #282626;
    font-size: 2rem;
+}
+.error-message {
+   color: red;
+   font-size: 1.5rem;
+}
+
+/* about page */
+#about-hero-circle-hover{
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   transform: translate(50%,-50%);
+   animation: slide-animate 6s  infinite;
+   z-index: 1;
+}
+.section-faq{
+   background-color: #F2F7FF;
+}
+.faq-content{
+   width: 100%;
+}
+.faq{
+   color: #282626;
+   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+   width: 90%;
+   border-radius: .5rem;
+   margin: 2rem 0;
+   background-color: #fff;
+}
+.question{
+   display: flex;
+   justify-content: space-between;
+   padding:3% ;
+   cursor: pointer;
+}
+.question:hover{
+   color: white;
+   background-color: #004D7B;
+}
+.faq-question{
+   font-size: 2.5rem;
+   font-weight: 600;
+   position: relative;
+}
+.answer{
+   display: none;
+   overflow: hidden;
+}
+.faq-answer-content{
+   padding: 0% 3% 3% 3%;
+   font-size: 1.8rem;
+}
+.faq i {
+   font-size: 3rem;
+}
+.faq.active .answer{
+   display: initial;
+   
+}
+.faq.active .question:hover{
+   color: #000;
+   background-color: unset; 
 }

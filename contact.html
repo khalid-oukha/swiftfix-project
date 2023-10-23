@@ -96,12 +96,21 @@
         </p>
       </div>
       <div class="form-contact-container">
-        <form action="/form.php" method="get" class="form">
-          <input type="text" placeholder="First Name" required />
-          <input type="text" placeholder="Last Name" required />
-          <input type="text" placeholder="Phone Number" required />
-          <input type="email" placeholder="Email" required />
-          <select class="select-box">
+        <form  class="form">
+          <span id="firstname-error" class="error-message"></span>
+          <input  id="firstname" type="text" placeholder="First Name"  />
+          
+          <span id="lastname-error" class="error-message"></span>
+          <input  id="lastname" type="text" placeholder="Last Name"  />
+          
+          <span id="phone-error" class="error-message"></span>
+          <input  id="phone" type="text" placeholder="Phone Number"  />
+          
+          <span id="email-error" class="error-message"></span>
+          <input  id="email" type="email" placeholder="Email"  />
+          
+          <span id="select-error" class="error-message"></span>
+          <select  id="select" class="select-box">
             <option value="" selected disabled>select an option</option>
             <option value="first">you want to ask us about our services</option>
             <option value="first">General Inquiry</option>
@@ -109,13 +118,16 @@
             <option value="third">Repairs & Maintenance</option>
             <option value="fourth">Painting Services</option>
           </select>
+          
+          
           <textarea
             name="message"
             id="message-contact"
             cols="30"
             rows="5"
           ></textarea>
-          <button class="primary-btn">SEND</button>
+          <span></span>
+          <button id="submitBtn" type="submit" class="primary-btn">SEND</button>
         </form>
         <div class="map-container">
 
@@ -356,5 +368,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="javascript/main.js"></script>
   </body>
 </html>
