@@ -15,7 +15,40 @@
         margin-top: 1rem;
       }
       .navbar{
+         display: none;
+         position: fixed;
+         height: 100vh;
+         top: 0;
+         width: 60%;
+         background-color: whitesmoke;
+         right: 0;
+         z-index: 100;
+      }
+      .navbar-openMenu{
          display: block;
+      }
+      .navbar ul{
+         display: flex;
+         flex-direction: column;
+         margin: 3rem;
+         gap: 5rem;
+      }
+      .link-item{
+         color: #094B72;
+         font-size: 3rem;
+         font-weight: 600;
+      }
+      .navbar svg{
+         display: block;
+         position: absolute;
+         right: 5%;
+         top: 2%;
+         cursor: pointer;
+      }
+      .navber-icons{
+         display: block;
+         width: 5rem;
+         cursor: pointer;
       }
     .logo svg{
       width: 90px; 
@@ -52,9 +85,6 @@
       /* ----------------count section and feedback-------------- */
      .count_details{
         width: 100%;
-     }
-     .client-content{
-        display: block;
      }
      .feedback,.form{
         width: 100%;
@@ -165,3 +195,5 @@
    width: 100%;
   }
   }
+
+  

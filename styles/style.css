@@ -105,37 +105,28 @@ h4{
    margin: 2% 10%;
 }
 
-.head-right{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: 60%;
-
-}
-.navbar{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   
-}
 .search-form label{
    font-size: 2rem;
 }
 .list-item{
    display: inline-block;
-   padding: 10px 30px;
-   
+   margin: 2rem 3rem;
 }
 .link-item{
-   font-size: 1.5rem;
+   font-size: 2rem;
+}
+.navbar svg{
+   display: none;
 }
 .icon-style {
    font-size: 2rem;
    margin-right: 2%;
    cursor: pointer;
  }
-
+.navber-icons{
+   display: none;
+   width: 5rem;
+}
 .hero{
    display: flex;
    justify-content: space-between;
@@ -297,13 +288,11 @@ h4{
    width: 100%;
  }
  
- .carousel-container {
-   display: flex;
-   transition: transform 1s;
- }
+
 .client-content{
    display: flex;
    margin-top: 25px;
+   transition: transform 1s;
 }
 .feedbackbox{   
    margin: 25px;
@@ -313,7 +302,7 @@ h4{
 }
 .feedback{
    flex: 1;
-   min-width: 50%;
+   min-width: 100%;
    color: #fff;
    text-align: center;
    transition: transform 1s;
@@ -393,7 +382,6 @@ h4{
    flex-direction: column;
    align-items: center;
    text-align: center;
-
 }
 .services-content{
    display: flex;
@@ -530,7 +518,6 @@ textarea{
    font-size: 1.5rem;
 }
 
-/* about page */
 #about-hero-circle-hover{
    position: absolute;
    top: 50%;
@@ -590,17 +577,14 @@ textarea{
 
 
 .read-more-container{
-   position: fixed;
    z-index: 100;
    width: 80%;
    padding: 5%;
-   top: 0%;
    color: #282626;
    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
    border-radius: 1rem;
    margin: 2rem 0;
    background-color: #fff;
-   /* background-color: rgba(0, 0, 0, 0.5); */
 }
 .read-more-container p{
    padding-bottom: 2%;
@@ -614,14 +598,19 @@ textarea{
 .read-less-margin{
    position: absolute;
 }
+
+.readmore-blur-container{
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   z-index: 20;
+   height: 100vh;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(10px);
+}
 .hidden-readmore{
    display: none;  
 }
-.on-readmore-focus{
-   z-index: 99;
-   width: 100%;
-   background-color: rgba(0, 0, 0, 0.5);
-}
-/* .closed-readmore{
-   
-} */

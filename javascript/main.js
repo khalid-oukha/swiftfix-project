@@ -1,23 +1,24 @@
-/** faq section */
-const question = document.querySelectorAll(".question");
-const faq = document.querySelectorAll(".faq");
-console.log(question);
-for (let i = 0; i < question.length; i++) {
-  question[i].addEventListener("click", function () {
-    faq[i].classList.toggle("active");
 
-    for (let j=0; j < question.length; j++) {
-        if(j!=i){
-            faq[j].classList.remove("active");
-        }
-    }
-  });
-}
+/*------- menu for mobile--------*/
+const openMenu = document.querySelector('#list-ul');
+const closeMenu = document.querySelector('#closemenu');
+const menu = document.querySelector('.navbar');
+openMenu.addEventListener('click' , function(){
+
+  menu.classList.toggle('navbar-openMenu');
+});
+closeMenu.addEventListener('click' , function(){
+
+  menu.classList.remove('navbar-openMenu');
+
+});
+
+
+
 
 /*carousl  */
 document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.querySelector(".carousel");
-  const container = document.querySelector(".carousel-container");
+  const container = document.querySelector(".client-content");
   const feedbackItems = document.querySelectorAll(".feedback");
 
   let index = 0;
@@ -25,20 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalItems = feedbackItems.length;
 
   function nextSlide() {
-    if(index!=totalItems){
-      updateCarousel();
-      index = index + 1 ;
+    if(index==totalItems){
+      index = 0;
     }
     else{
-      index = 0;
+      index = index + 1 ;
       updateCarousel();
     }
   }
 
   function updateCarousel() {
     const allItemswidth = -index * itemWidth;
-    container.style.transform = `translateX(${allItemswidth}px)`;
+    container.style.transform =`translateX(${allItemswidth}px)`;
   }
 
   setInterval(nextSlide, 2000); 
 });
+
+
