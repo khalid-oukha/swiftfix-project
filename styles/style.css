@@ -292,6 +292,15 @@ h4{
    padding-bottom: 50px;
    background-color: #F2F7FF;
 }
+.carousel {
+   overflow: hidden;
+   width: 100%;
+ }
+ 
+ .carousel-container {
+   display: flex;
+   transition: transform 1s;
+ }
 .client-content{
    display: flex;
    margin-top: 25px;
@@ -304,9 +313,10 @@ h4{
 }
 .feedback{
    flex: 1;
-   width: 50%;
+   min-width: 50%;
    color: #fff;
    text-align: center;
+   transition: transform 1s;
 }
 .client-pic-name{
    display: flex;
@@ -577,3 +587,41 @@ textarea{
    color: #000;
    background-color: unset; 
 }
+
+
+.read-more-container{
+   position: fixed;
+   z-index: 100;
+   width: 80%;
+   padding: 5%;
+   top: 0%;
+   color: #282626;
+   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 1rem;
+   margin: 2rem 0;
+   background-color: #fff;
+   /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.read-more-container p{
+   padding-bottom: 2%;
+   font-size: 2rem;
+}
+.read-more-container span{
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 5%;
+}
+.read-less-margin{
+   position: absolute;
+}
+.hidden-readmore{
+   display: none;  
+}
+.on-readmore-focus{
+   z-index: 99;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+/* .closed-readmore{
+   
+} */
