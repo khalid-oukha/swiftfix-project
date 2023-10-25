@@ -13,9 +13,6 @@ closeMenu.addEventListener('click' , function(){
 
 });
 
-
-
-
 /*carousl  */
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".client-content");
@@ -43,4 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(nextSlide, 2000); 
 });
 
-
+/* dropdown for services  */
+const serviceList = document.querySelector('.service-list');
+const dropdownactive = document.querySelector('#dropdownactive');
+dropdownactive.addEventListener('click',function(){
+  serviceList.classList.toggle('active-services-dropdown');
+  dropdownactive.classList.toggle('rotate-icon');
+});

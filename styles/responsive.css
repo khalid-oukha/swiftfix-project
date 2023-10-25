@@ -27,7 +27,7 @@
       .navbar-openMenu{
          display: block;
       }
-      .navbar ul{
+      nav .nav-list{
          display: flex;
          flex-direction: column;
          margin: 3rem;
@@ -49,6 +49,10 @@
          display: block;
          width: 5rem;
          cursor: pointer;
+      }
+      .service-list{
+         width: 80%;
+         border-radius: 0;
       }
     .logo svg{
       width: 90px; 

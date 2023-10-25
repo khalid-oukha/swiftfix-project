@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
+
     <header class="head-style">
       <a class="logo" href="index.html" aria-label="home page">
         <svg
@@ -71,11 +72,18 @@
               >about</a
             >
           </li>
-          <li class="list-item">
-            <a class="link-item" href="service.html" aria-label="services page"
-              >SERVICES</a
-            >
+          <li id="navbar-services-item" class="list-item">
+            <a id="service-item" class="link-item" href="service.html" aria-label="services page">SERVICES
+            </a>
+            <ul class="service-list">
+              <li class="service-dropdown-item"><a  href=""></a>order service</li>
+              <li class="service-dropdown-item"><a  href=""></a>products</li>
+              <li class="service-dropdown-item"><a  href=""></a>products</li>
+              <li class="service-dropdown-item"><a  href=""></a>help </li>
+              
+            </ul>
           </li>
+          <i id="dropdownactive" class="fa-solid fa-chevron-down fa-xl"></i>
         </ul>
       </nav>
       <div class="navber-icons">
@@ -316,9 +324,6 @@
         >
       </div>
     </div>
-
-
-
 
 
     <section class="order-services container">

@@ -9,6 +9,7 @@ readlessBtn.addEventListener('click', function(){
     readMoreContainer.classList.add('hidden-readmore');
 });
 /** faq section */
+
 const question = document.querySelectorAll(".question");
 const faq = document.querySelectorAll(".faq");
 console.log(question);

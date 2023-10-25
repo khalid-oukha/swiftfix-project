@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   </head>
@@ -60,7 +61,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        <ul>
+        <ul class="nav-list">
           <li class="list-item">
             <a class="link-item" href="contact.html" aria-label="contact page"
               >Contact</a
@@ -76,10 +77,18 @@
               >about</a
             >
           </li>
-          <li class="list-item">
-            <a class="link-item" href="service.html" aria-label="services page"
-              >SERVICES</a
-            >
+          <li id="navbar-services-item" class="list-item">
+            <a id="service-item" class="link-item" href="service.html" aria-label="services page">SERVICES
+            </a>
+            <i id="dropdownactive" class="fa-solid fa-chevron-down fa-xl"></i>
+            <ul class="service-list">
+              <li class="service-dropdown-item"><a  href=""></a>order service</li>
+              <li class="service-dropdown-item"><a  href=""></a>products</li>
+              <li class="service-dropdown-item"><a  href=""></a>products</li>
+              <li class="service-dropdown-item"><a  href=""></a>help </li>
+              
+            </ul>
+            
           </li>
         </ul>
       </nav>

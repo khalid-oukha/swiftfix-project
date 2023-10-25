@@ -111,6 +111,11 @@ h4{
 .list-item{
    display: inline-block;
    margin: 2rem 3rem;
+   transition: all .55s ease;
+   cursor: pointer;
+}
+.list-item:hover{
+   border-bottom: 2px solid #004D7B;
 }
 .link-item{
    font-size: 2rem;
@@ -118,15 +123,44 @@ h4{
 .navbar svg{
    display: none;
 }
-.icon-style {
+.icon-service-dropdown {
    font-size: 2rem;
    margin-right: 2%;
    cursor: pointer;
- }
+}
+.angle-double-down{
+   width: 3rem;
+}
 .navber-icons{
    display: none;
    width: 5rem;
 }
+.service-item{
+   position: relative;
+}
+.service-list{
+   display: none ;
+   position: absolute;
+   width: 25rem;
+   background-color: #004D7B;
+   z-index: 10;
+   border-radius: 2rem 5rem ;
+}
+.rotate-icon{
+   transform: rotate(180deg);
+   transition: .5s ease-in-out;
+}
+.active-services-dropdown{
+   display: block;
+}
+.service-dropdown-item{
+   font-size: 2rem;
+   padding: 2rem;
+   color: white;
+} 
+.service-dropdown-item:hover{
+   border: .2rem solid white;
+}  
 .hero{
    display: flex;
    justify-content: space-between;
