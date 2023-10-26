@@ -32,6 +32,7 @@
    list-style: none;
    font-family: 'Poppins', serif;
    font-size: 10px;
+   scroll-behavior: smooth;
 }
 body{
    overflow-x: hidden;
@@ -93,7 +94,7 @@ h4{
 
 .p-color-grey{
    font-size: 2.3rem;
-   color: #989595;
+   color: #090909;
 }
 
 /* ------------------------------------------hero first section style------------------------------------------*/
@@ -104,13 +105,13 @@ h4{
    align-items: center;
    margin: 2% 10%;
 }
-
-.search-form label{
-   font-size: 2rem;
+.nav-list{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .list-item{
-   display: inline-block;
-   margin: 2rem 3rem;
+   margin: 0rem 3rem;
    transition: all .55s ease;
    cursor: pointer;
 }
@@ -134,6 +135,19 @@ h4{
 .navber-icons{
    display: none;
    width: 5rem;
+}
+.search-container{   
+   border-bottom: 0;
+   display: flex;
+   align-items: center;
+}
+.input-search-style{
+   display: none;
+   font-size: 1.5rem;
+   margin-left: 1rem;
+   border: .2rem solid #d1dbea;
+   border-radius: 1rem;
+   text-align: center;
 }
 .service-item{
    position: relative;
@@ -210,7 +224,6 @@ h4{
 
 #hero-circle-front{
    position: absolute;
-   
 }
 
 .hero-name-font{
@@ -235,7 +248,6 @@ h4{
 
 /* ------------------------------------------why  section style------------------------------------------*/
 .why{
-   background-color: #F2F7FF;
    position: relative;
    padding-top: 5%;
    padding-bottom: 5%;
@@ -276,7 +288,6 @@ h4{
    align-items: center;
    justify-content: center;
    padding: 50px; /* Add some padding for space */
-   background-image: url(images/Patterns.svg);
    background-color: #094B72;  
 }
 .section-count svg{
@@ -364,19 +375,18 @@ h4{
 .swiftfix-infos{
    display: flex;
    justify-content: space-between;
-   padding-top: 50px;
-   height: 50vh;
+   padding-top: 5rem;
    background-color: #094B72;
+   padding-bottom: 3rem;
 }
 .list-infos {
    display: flex;
    justify-content: space-between;
-   width: 50%;
 }
 .list h4{
    font-size: 2rem;
    color: #F2F7FF;
-   padding-bottom: 25px;
+   padding-bottom: 2.5rem;
 }
 
 .list-element a{
@@ -384,7 +394,7 @@ h4{
    color: #EEEFF4;
 }
 .list-element {
-   padding-top: 15px;
+   padding-top: 1.5rem;
 }
 
 .footer-license{
@@ -394,6 +404,7 @@ h4{
    justify-content: space-between;
    align-items: center;
 }
+
 .social-media img{
    padding-left: 10px;
    padding-right: 10px;

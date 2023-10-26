@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalItems = feedbackItems.length;
 
   function nextSlide() {
-    if(index==totalItems){
+    if(index==totalItems-1){
       index = 0;
     }
     else{
-      index = index + 1 ;
-      updateCarousel();
+      index = index + 1 ;  
     }
+    updateCarousel();
   }
 
   function updateCarousel() {
@@ -47,3 +47,10 @@ dropdownactive.addEventListener('click',function(){
   serviceList.classList.toggle('active-services-dropdown');
   dropdownactive.classList.toggle('rotate-icon');
 });
+
+/* search for navbar   */
+const searchIcon = document.querySelector('#search-icon');
+const inputSearch = document.querySelector('.input-search-style');
+searchIcon.addEventListener('click',function(){
+  inputSearch.classList.toggle('active-services-dropdown');
+})

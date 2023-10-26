@@ -50,6 +50,18 @@
          width: 5rem;
          cursor: pointer;
       }
+      .search-container{   
+         border-bottom: 0;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         height: 5rem;
+         align-items: center;
+      }
+      .input-search-style{
+         font-size: 2rem;
+         margin-left: 0rem;
+      }
       .service-list{
          width: 80%;
          border-radius: 0;
