@@ -1,61 +1,54 @@
-
-/*  validation contact form */
-const form = document.querySelector(".form");
-const firstName = document.querySelector("#firstname");
-const lastName = document.querySelector("#lastname");
-const phone = document.querySelector("#phone");
-const email = document.querySelector("#email");
-const select = document.querySelector("#select");
-/*  get all spans */
-const firstnameError = document.querySelector("#firstname-error");
-const lastnameError = document.querySelector("#lastname-error");
-const phoneError = document.querySelector("#phone-error");
-const emailError = document.querySelector("#email-error");
-const selectError = document.querySelector("#select-error");
-
-/*  regex form for inputs */
-const nameRegex = /^[A-Za-z]+$/;
-const phoneRegex = /^\d{10}$/;
-const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-function valideInput() {
-  const nameValue = firstName.value.trim();
-  const lastnameValue = lastName.value.trim();
-  const phoneValue = phone.value.trim();
-  const emailValue = email.value.trim();
-  const selectValue = select.value.trim();
-  if (nameValue === "" || !nameRegex.test(nameValue)) {
-    firstnameError.textContent = "first name is invalide";
-  } else {
-    firstnameError.textContent = "";
+const inputs = document.querySelectorAll('.form input');
+const patterns = {
+  phone:{
+    regix: /^\+212\-[567][0-9]{8}$/, 
+    message: "telephone not valid (exampl: +212-681318191) ",  
+  },
+  firstname:{
+    regix: /^[a-zA-Z]+$/, 
+    message: "firstname not valide (exampl:khalid) ",
+  },
+  lastname:{
+    regix: /^[a-zA-Z]+$/, 
+    message: "lastname not valide (exampl:alami) ",
+  },
+  email:{
+    regix: /^[a-zA-Z0-9_\.\-]+@[a-z]+\.[a-z]{2,6}$/, 
+    message: "email not valide (exampl: exmple@gmail.com) ",
+  },
+}
+//function to check valid inputs
+function valide(pattern,input){
+  fieldMessage = document.getElementById(input.attributes.name.value + "-message")
+  if(!pattern.regix.test(input.value))
+  {
+    fieldMessage.innerText = pattern.message;
+    fieldMessage.style.color = "red";
   }
-
-  if (lastnameValue === "" || !nameRegex.test(lastnameValue)) {
-    lastnameError.textContent = "last name invalide";
-  } else {
-    lastnameError.textContent = "";
+  else{
+    fieldMessage.innerText = "valid";
+    fieldMessage.style.color = "green";
   }
-
-  if (phoneValue === "" || !phoneRegex.test(phoneValue)) {
-    phoneError.textContent = "phone number is invalide";
+  
+  if (isAllInputsValide()) {
+    document.getElementById("submitBtn").disabled = false;
   } else {
-    phoneError.textContent = "";
-  }
-
-  if (emailValue === "" || !emailRegex.test(emailValue)) {
-    emailError.textContent = "email is invalide";
-  } else {
-    emailError.textContent = "";
-  }
-  if (selectValue === "") {
-    selectError.textContent = "select topic is invalide";
-  } else {
-    selectError.textContent = "";
+    document.getElementById("submitBtn").disabled = true;
   }
 }
-const submitBtn = document.querySelector("#submitBtn");
-submitBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  console.log("valid form");
-  valideInput();
+
+inputs.forEach((input) =>{
+  input.addEventListener('keyup',function(e){
+      valide(patterns[e.target.attributes.name.value],e.target);
+  });
 });
+
+function isAllInputsValide() {
+  let allInputs = document.querySelectorAll(".form > span");
+  let isAllValid = true;
+  allInputs.forEach(input => {
+    if(input.style.color != "green")
+      isAllValid = false;
+  })
+  return isAllValid;
+}

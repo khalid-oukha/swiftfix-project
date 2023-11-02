@@ -8,6 +8,7 @@ readMoreBtn.addEventListener('click', function(){
 readlessBtn.addEventListener('click', function(){
     readMoreContainer.classList.add('hidden-readmore');
 });
+
 /** faq section */
 
 const question = document.querySelectorAll(".question");

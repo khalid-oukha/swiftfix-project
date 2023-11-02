@@ -112,20 +112,21 @@
       </div>
       <div class="form-contact-container">
         <form  class="form">
-          <span id="firstname-error" class="error-message"></span>
-          <input  id="firstname" type="text" placeholder="First Name"  />
+          <span id="firstname-message"></span>
+          <input name="firstname" id="firstname" type="text" placeholder="First Name"  />
           
-          <span id="lastname-error" class="error-message"></span>
-          <input  id="lastname" type="text" placeholder="Last Name"  />
+          <span id="lastname-message"></span>
+          <input name="lastname" id="lastname" type="text" placeholder="Last Name"  />
           
-          <span id="phone-error" class="error-message"></span>
-          <input  id="phone" type="text" placeholder="Phone Number"  />
+          <span id="phone-message"></span>
+          <input name="phone" id="phone" type="text" placeholder="Phone Number"  />
           
-          <span id="email-error" class="error-message"></span>
-          <input  id="email" type="email" placeholder="Email"  />
+          <span id="email-message"></span>
+          <input name="email" id="email" type="email" placeholder="Email"  />
           
-          <span id="select-error" class="error-message"></span>
-          <select  id="select" class="select-box">
+          <!--<span id="select-message"></span>-->
+          <select name="
+          " id="select" class="select-box">
             <option value="" selected disabled>select an option</option>
             <option value="first">you want to ask us about our services</option>
             <option value="first">General Inquiry</option>
@@ -141,8 +142,7 @@
             cols="30"
             rows="5"
           ></textarea>
-          <span></span>
-          <button id="submitBtn" type="submit" class="primary-btn">SEND</button>
+          <button id="submitBtn" type="submit" class="primary-btn btn-disable" disabled>SEND</button>
         </form>
         <div class="map-container">
 

@@ -195,7 +195,7 @@
 }
 
   }
-  @media screen and (min-width: 1025px) and (max-width: 1439px){
+@media screen and (min-width: 1025px) and (max-width: 1439px){
    *{
       font-size: 7px ;
    }
